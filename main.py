@@ -20,7 +20,7 @@ load_dotenv()
 
 app = FastAPI(title="Semantic Chunking & QA App", version="1.0.0")
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
